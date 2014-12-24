@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.nemesis.materialchess"
+      android:versionCode="1"
+      android:versionName="0.2beta"
+      android:installLocation="auto">
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application android:icon="@drawable/ic_launcher"
+    			 android:label="@string/app_name"
+    			 
+    			 android:theme="@style/AppTheme">
+        <activity android:name="org.empyrn.darkknight.DarkKnight"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.empyrn.darkknight.Preferences"
+        		  android:label="Preferences"
+            	  android:parentActivityName="org.empyrn.darkknight.DarkKnight" >
+        
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.empyrn.darkknight.DarkKnight" />
+            
+        </activity>
+        <activity android:name="org.empyrn.darkknight.EditBoard"
+        		  android:label="Edit Board"
+                  android:configChanges="orientation">
+        </activity>
+        <activity android:name="org.empyrn.darkknight.LoadPGN"
+        		  android:label="Load PGN game"
+        		  android:configChanges="orientation">
+        </activity>
+        <activity android:name="org.empyrn.darkknight.CPUWarning"
+        		  android:label="CPU Warning">
+        </activity>
+        <activity android:name="org.empyrn.darkknight.bluetooth.DeviceListActivity"
+        		  android:label="Select Device"
+        		  android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden">
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="11"/>
+</manifest>

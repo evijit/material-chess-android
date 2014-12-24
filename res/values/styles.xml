@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources>
+  <!-- your theme inherits from the material theme -->
+  <style name="AppTheme" parent="Theme.AppCompat">
+       <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/red</item>
+    
+
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/darkred</item>
+
+
+    <!-- colorAccent is used as the default value for colorControlActivated,
+         which is used to tint widgets -->
+    <item name="colorAccent">@color/red</item>
+    <item name="windowActionBar">false</item> 
+
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight, and colorSwitchThumbNormal. -->
+  </style>
+</resources>

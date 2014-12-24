@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" >
+	
+	<item
+	  	android:id="@+id/item_undo"
+  		android:title="Undo"
+	  	android:icon="@drawable/undo"
+	  	app:showAsAction="always">
+	</item>
+	<item
+  		android:id="@+id/item_redo"
+	  	android:title="Redo"
+	  	android:icon="@drawable/redo"
+	  	app:showAsAction="always">
+	</item>
+	<!--  <item
+  		android:id="@+id/item_new_game"
+  		android:icon="@android:drawable/ic_menu_revert"
+	  	android:title="New game"
+  		android:icon="@android:drawable/ic_menu_add" android:showAsAction="never">
+	</item>
+	<item
+  		android:id="@+id/item_editboard"
+	  	android:title="Edit board"
+  		android:icon="@android:drawable/ic_menu_edit">
+	</item>
+	<item
+  		android:id="@+id/item_flipboard"
+	  	android:title="Flip board"
+  		android:icon="@android:drawable/ic_menu_rotate" android:showAsAction="never">
+	</item>
+	<item
+		android:id="@+id/bluetooth_submenu"
+		android:title="Bluetooth" android:showAsAction="never">
+		<menu>
+			<item
+				android:id="@+id/bluetooth_create" android:title="Create Bluetooth game">
+			</item>
+			<item
+				android:id="@+id/bluetooth_set_discoverable" android:title="Set discoverable">
+			</item>
+			<item
+				android:id="@+id/bluetooth_reset" android:title="Reset">
+			</item>
+		</menu>
+	</item>
+	<item
+		android:id="@+id/item_load_pgn_file"
+		android:title="Load PGN">
+	</item>
+	<item
+	 	android:id="@+id/item_settings"
+	  	android:title="Settings">
+	</item>
+	<item
+		android:id="@+id/item_resign"
+		android:title="Resign game">
+	</item>
+	<item
+		android:id="@+id/item_goto_move"
+		android:title="Go to move number">
+	</item>
+	<item
+		android:id="@+id/item_force_move"
+		android:title="Force computer move">
+	</item>
+	<!
+	<item
+		android:id="@+id/item_draw"
+		android:title="Claim/Offer/Accept draw">
+	</item>
+  >
+	<item
+		android:id="@+id/select_book"
+		android:title="Select opening book">
+	</item>
+	
+	<item
+		android:id="@+id/item_about"
+		android:title="About / Help">
+	</item> -->
+</menu>
