@@ -2,6 +2,8 @@
 
 #Material Chess - ChessTastic 
 
+[![Join the chat at https://gitter.im/AvijitGhosh82/material-chess-android](https://badges.gitter.im/AvijitGhosh82/material-chess-android.svg)](https://gitter.im/AvijitGhosh82/material-chess-android?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [Play Store Link](https://play.google.com/store/apps/details?id=com.nemesis.materialchess&hl=en)
 
 An extension of the Dark Knight and Stockfish open source projects, I developed this as a hobby project last winter. I'm looking for a co-developer to help me maintain this project.
