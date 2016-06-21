@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/my_home"
+    android:fitsSystemWindows="true">
+    
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/my_awesome_toolbar2"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary" />
+    
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+<LinearLayout
+	
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    
+	<view
+		class="org.empyrn.darkknight.ChessBoard"
+    	android:id="@+id/chessboard"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"/>
+	<LinearLayout
+		
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+	<TextView
+	    android:id="@+id/status"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:includeFontPadding="true"
+	    android:textStyle="bold"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    />
+	<!--  android:typeface="monospace"-->
+	<ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		<TextView
+		    android:id="@+id/moveList"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:includeFontPadding="true"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    />
+		<!--  android:typeface="monospace"-->
+   	</ScrollView>
+	<TextView
+	    android:id="@+id/thinking"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:includeFontPadding="true"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    />
+	<!--  android:typeface="monospace"-->
+	</LinearLayout>
+</LinearLayout>
+
+	<ListView
+		android:id="@+id/left_drawer"
+		android:layout_width="304dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:background="#212121"
+		android:choiceMode="singleChoice"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="0dp"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

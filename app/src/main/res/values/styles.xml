@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources>
+  <!-- your theme inherits from the material theme -->
+  <style name="AppTheme" parent="Theme.AppCompat">
+    <item name="windowActionBar">false</item>
+    <!--  <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
+  </style>
+
+  <!-- <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/bt_action</item>
+   </style>-->
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#3300A621</item>
+        <item name="sv_showcaseColor">#00801A</item>
+        <item name="sv_buttonText">Hide</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#00801A</item>
+    </style>
+  
+  <style name="AppThemeRed" parent="AppTheme">
+    <item name="colorPrimary">@color/red</item>
+    <item name="colorPrimaryDark">@color/darkred</item>
+    <item name="colorAccent">@color/red</item>
+    <item name="colorControlActivated">@color/red</item>
+    <item name="android:dialogTheme">@style/MyDialogStyleRed</item>
+    <item name="android:alertDialogTheme">@style/MyDialogStyleRed</item>
+    <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+  </style>
+  
+  <style name="AppThemeBlue" parent="AppTheme">
+    <item name="colorPrimary">@color/blue</item>
+    <item name="colorPrimaryDark">@color/darkblue</item>
+    <item name="colorAccent">@color/blue</item>
+      <item name="colorControlActivated">@color/blue</item>
+      <item name="android:dialogTheme">@style/MyDialogStyleBlue</item>
+      <item name="android:alertDialogTheme">@style/MyDialogStyleBlue</item>
+  </style>
+  
+  <style name="AppThemePurple" parent="AppTheme">
+    <item name="colorPrimary">@color/purple</item>
+    <item name="colorPrimaryDark">@color/darkpurple</item>
+    <item name="colorAccent">@color/purple</item>
+      <item name="colorControlActivated">@color/purple</item>
+      <item name="android:dialogTheme">@style/MyDialogStylePurple</item>
+      <item name="android:alertDialogTheme">@style/MyDialogStylePurple</item>
+  </style>
+  
+  <style name="AppThemeGreen" parent="AppTheme">
+    <item name="colorPrimary">@color/green</item>
+    <item name="colorPrimaryDark">@color/darkgreen</item>
+    <item name="colorAccent">@color/green</item>
+      <item name="colorControlActivated">@color/green</item>
+      <item name="android:dialogTheme">@style/MyDialogStyleGreen</item>
+      <item name="android:alertDialogTheme">@style/MyDialogStyleGreen</item>
+  </style>
+  
+  <style name="AppThemeGrey" parent="AppTheme">
+    <item name="colorPrimary">@color/grey</item>
+    <item name="colorPrimaryDark">@color/darkgrey</item>
+    <item name="colorAccent">@color/grey</item>
+      <item name="colorControlActivated">@color/grey</item>
+      <item name="android:dialogTheme">@style/MyDialogStyleGrey</item>
+      <item name="android:alertDialogTheme">@style/MyDialogStyleGrey</item>
+  </style>
+  
+  <style name="AppThemeOrange" parent="AppTheme">
+    <item name="colorPrimary">@color/orange</item>
+    <item name="colorPrimaryDark">@color/darkorange</item>
+    <item name="colorAccent">@color/orange</item>
+      <item name="colorControlActivated">@color/orange</item>
+      <item name="android:dialogTheme">@style/MyDialogStyleOrange</item>
+      <item name="android:alertDialogTheme">@style/MyDialogStyleOrange</item>
+  </style>
+
+    <style name="MyDialogStyleRed" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/darkred</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="MyDialogStyleBlue" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/darkblue</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="MyDialogStylePurple" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/darkpurple</item>
+        <item name="colorAccent">@color/purple</item>
+    </style>
+
+    <style name="MyDialogStyleGreen" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/darkgreen</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="MyDialogStyleOrange" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/darkorange</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="MyDialogStyleGrey" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/darkgrey</item>
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="CustomShowcaseTheme2" parent="ShowcaseView">
+        <item name="sv_backgroundColor">#bb424242</item>
+        <item name="sv_showcaseColor">@color/orange</item>
+
+        <item name="sv_buttonText">OK</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+    </style>
+
+    <style name="CustomShowcaseTheme3" parent="ShowcaseView">
+        <item name="sv_backgroundColor">#bb424242</item>
+        <item name="sv_showcaseColor">@color/orange</item>
+
+        <item name="sv_buttonText">Done</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+    </style>
+
+    <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+  
+</resources>

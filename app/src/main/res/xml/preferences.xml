@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="Playing Options">
+		<Preference 
+		    android:title="Set Color" 
+		    android:summary="Default (Red)"
+		    android:key="theme"> 
+		</Preference>
+		<ListPreference
+			android:key="gameMode"
+			android:title="Game Mode"
+			android:summary="Select opponent, analysis mode or computer match"
+			android:entryValues="@array/game_mode_values"
+			android:entries="@array/game_mode_texts"
+			android:defaultValue="1">
+		</ListPreference>
+		<CheckBoxPreference
+			android:key="boardFlipped"
+			android:title="Flip Board"
+			android:summary="View board from black side"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<CheckBoxPreference
+			android:key="autoSwapSides"
+			android:title="Auto Swap Sides"
+			android:summary="Automatically swap sides when new game started. Also overrides Flip Board setting"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Difficulty">
+		<ListPreference
+			android:key="difficultyDepth"
+			android:title="Depth"
+			android:summary="Depth the engine looks ahead (determines difficulty)"
+			android:entryValues="@array/difficulty_depth_values"
+			android:entries="@array/difficulty_depth_texts"
+			android:defaultValue="2">
+		</ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Time Control">
+		<ListPreference
+			android:key="movesPerSession"
+			android:title="Moves"
+			android:summary="Number of moves between time controls"
+			android:entryValues="@array/moves_per_session_values"
+			android:entries="@array/moves_per_session_texts"
+			android:defaultValue="60">
+		</ListPreference>
+		<ListPreference
+			android:key="timeControl"
+			android:title="Time"
+			android:summary="Maximum thinking time between time controls"
+			android:entryValues="@array/time_control_values"
+			android:entries="@array/time_control_texts"
+			android:defaultValue="15000">
+		</ListPreference>
+		<ListPreference
+			android:key="timeIncrement"
+			android:title="Increment"
+			android:summary="Extra thinking time for each completed move"
+			android:entryValues="@array/time_increment_values"
+			android:entries="@array/time_increment_texts"
+			android:defaultValue="0">
+		</ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Hints">
+		<CheckBoxPreference
+			android:key="showThinking"
+			android:title="Show Computer Thinking"
+			android:summary="Display computer algorithm information during search"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<CheckBoxPreference
+			android:key="bookHints"
+			android:title="Show Book Hints"
+			android:summary="Display opening book move hints for human player"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<ListPreference
+			android:key="thinkingArrows"
+			android:title="Use Arrows"
+			android:summary="Use arrows to display moves on chess board"
+			android:entryValues="@array/thinking_arrows_values"
+			android:entries="@array/thinking_arrows_texts"
+			android:defaultValue="2">
+		</ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="User Interface">
+		<ListPreference
+			android:key="scrollSensitivity"
+			android:title="Scrolling Speed"
+			android:summary="Scrolling speed for game navigation. Select off for instant play."
+			android:entryValues="@array/scroll_sensitivity_values"
+			android:entries="@array/scroll_sensitivity_texts"
+			android:defaultValue="0">
+		</ListPreference>
+		<CheckBoxPreference
+			android:key="invertScrollDirection"
+			android:title="Invert Scroll Direction"
+			android:summary="Enable this if you think scrolling moves in the wrong direction"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<ListPreference
+			android:key="fontSize"
+			android:title="Text Size"
+			android:summary="Font size for move list and game information"
+			android:entryValues="@array/font_size_values"
+			android:entries="@array/font_size_texts"
+			android:defaultValue="20">
+		</ListPreference>
+		<CheckBoxPreference
+			android:key="soundEnabled"
+			android:title="Enable Sounds"
+			android:summary="Play sound when computer makes a move"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<CheckBoxPreference
+			android:key="oneTouchMoves"
+			android:title="One Touch Moves"
+			android:summary="Touching a square that corresponds to one unique move makes that move immediately"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Other">
+		<EditTextPreference
+			android:key="bookFile"
+			android:title="Book Filename"
+			android:summary="Polyglot book file in ChessTastic directory on SD Card"
+			android:defaultValue="">
+		</EditTextPreference>
+		<PreferenceScreen
+			android:key="pgnSettings"
+			android:title="PGN Settings"
+			android:summary="Settings for import and export of portable game notation (PGN) data">
+			<PreferenceCategory
+				android:title="PGN viewer">
+				<CheckBoxPreference
+					android:key="viewVariations"
+					android:title="Variations"
+					android:summary="Include non-mainline moves"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="viewComments"
+					android:title="Comments"
+					android:summary="Include user written comments"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="viewNAG"
+					android:title="Annotations"
+					android:summary="Include numeric annotation glyphs (NAGs), such as ! and ?"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="viewHeaders"
+					android:title="Headers"
+					android:summary="Show PGN header lines"
+					android:defaultValue="false">
+				</CheckBoxPreference>
+			</PreferenceCategory>
+			<PreferenceCategory
+				android:title="PGN import">
+				<CheckBoxPreference
+					android:key="importVariations"
+					android:title="Variations"
+					android:summary="Include non-mainline moves"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="importComments"
+					android:title="Comments"
+					android:summary="Include user written comments"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="importNAG"
+					android:title="Annotations"
+					android:summary="Include numeric annotation glyphs (NAGs), such as ! and ?"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+			</PreferenceCategory>
+			<PreferenceCategory
+				android:title="PGN export">
+				<CheckBoxPreference
+					android:key="exportVariations"
+					android:title="Variations"
+					android:summary="Include non-mainline moves"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="exportComments"
+					android:title="Comments"
+					android:summary="Include user written comments"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="exportNAG"
+					android:title="Annotations"
+					android:summary="Include numeric annotation glyphs (NAGs), such as ! and ?"
+					android:defaultValue="true">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="exportPlayerAction"
+					android:title="Player Actions"
+					android:summary="Include information about draw and resign actions"
+					android:defaultValue="false">
+				</CheckBoxPreference>
+				<CheckBoxPreference
+					android:key="exportTime"
+					android:title="Clock"
+					android:summary="Include time information for each move"
+					android:defaultValue="false">
+				</CheckBoxPreference>
+			</PreferenceCategory>
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

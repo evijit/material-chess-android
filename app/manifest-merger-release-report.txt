@@ -1,0 +1,108 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:7
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:installLocation
+		ADDED from AndroidManifest.xml:6:7
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+application
+ADDED from AndroidManifest.xml:10:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:label
+		ADDED from AndroidManifest.xml:11:9
+	android:icon
+		ADDED from AndroidManifest.xml:10:18
+	android:theme
+		ADDED from AndroidManifest.xml:13:9
+activity#org.empyrn.darkknight.ChessTastic
+ADDED from AndroidManifest.xml:14:9
+	android:label
+		ADDED from AndroidManifest.xml:15:19
+	android:configChanges
+		ADDED from AndroidManifest.xml:16:19
+	android:name
+		ADDED from AndroidManifest.xml:14:19
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:17:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:18:17
+	android:name
+		ADDED from AndroidManifest.xml:18:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:19:17
+	android:name
+		ADDED from AndroidManifest.xml:19:27
+activity#org.empyrn.darkknight.Preferences
+ADDED from AndroidManifest.xml:22:9
+	android:label
+		ADDED from AndroidManifest.xml:23:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:24:16
+	android:name
+		ADDED from AndroidManifest.xml:22:19
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from AndroidManifest.xml:26:9
+	android:name
+		ADDED from AndroidManifest.xml:27:13
+	android:value
+		ADDED from AndroidManifest.xml:28:13
+activity#org.empyrn.darkknight.EditBoard
+ADDED from AndroidManifest.xml:31:9
+	android:label
+		ADDED from AndroidManifest.xml:32:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:33:19
+	android:name
+		ADDED from AndroidManifest.xml:31:19
+activity#org.empyrn.darkknight.LoadPGN
+ADDED from AndroidManifest.xml:35:9
+	android:label
+		ADDED from AndroidManifest.xml:36:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:37:13
+	android:name
+		ADDED from AndroidManifest.xml:35:19
+activity#org.empyrn.darkknight.CPUWarning
+ADDED from AndroidManifest.xml:39:9
+	android:label
+		ADDED from AndroidManifest.xml:40:13
+	android:name
+		ADDED from AndroidManifest.xml:39:19
+activity#org.empyrn.darkknight.bluetooth.DeviceListActivity
+ADDED from AndroidManifest.xml:42:9
+	android:label
+		ADDED from AndroidManifest.xml:43:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:45:19
+	android:theme
+		ADDED from AndroidManifest.xml:44:13
+	android:name
+		ADDED from AndroidManifest.xml:42:19
+uses-sdk
+ADDED from AndroidManifest.xml:48:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.github.fernandodev.easyratingdialog:easyratingdialog:1.0.1:7:5
+MERGED from com.github.amlcurran.showcaseview:library:5.0.0:7:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:48:15
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

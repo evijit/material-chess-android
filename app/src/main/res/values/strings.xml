@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items">
+	<item>New Game</item>
+	<item>Edit Board</item>
+	<item>Flip Board</item>
+	<item>Bluetooth</item>
+	<item>Load PGN</item>
+	<item>Settings</item>
+	<item>Resign Game</item>
+	<item>Go to move number</item>
+	<item>Force computer move</item>
+	<item>Select opening book</item>
+    <item>Rating and Feedback</item>
+	<item>About</item>
+	</string-array>
+	<string name="app_name">ChessTastic™</string>
+    <string name="app_name_pop">ChessTastic™  Beta  1.0</string>
+    <string name="erd_title">Rate this app</string>
+    <string name="erd_message">Hi, take a minute to rate this app and help me to improve and add new features. ;)</string>
+    <string name="erd_no_thanks">Never</string>
+    <string name="erd_remind_me_later">Remind later</string>
+    <string name="erd_rate_now">Rate now</string>
+    <string name="showcase_main_title">Lulu</string>
+    <string name="showcase_main_message">Hagu</string>
+	<string-array name="moves_per_session_texts">
+	    <item>Whole Game</item>
+	    <item>1 move</item>
+	    <item>10 moves</item>
+	    <item>20 moves</item>
+    	<item>30 moves</item>
+	    <item>40 moves</item>
+	    <item>50 moves</item>
+    	<item>60 moves</item>
+	</string-array>
+	<string-array name="difficulty_depth_values">
+		<item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>12</item>
+    	<item>-1</item>
+	</string-array>
+	<string-array name="moves_per_session_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>10</item>
+	    <item>20</item>
+    	<item>30</item>
+	    <item>40</item>
+	    <item>50</item>
+    	<item>60</item>
+	</string-array>
+	<string-array name="difficulty_depth_texts">
+		<item>2 ply</item>
+	    <item>3 ply</item>
+	    <item>4 ply</item>
+	    <item>5 ply</item>
+	    <item>6 ply</item>
+	    <item>7 ply</item>
+	    <item>8 ply</item>
+	    <item>12 ply</item>
+    	<item>Infinite</item>
+	</string-array>
+	<string-array name="time_control_texts">
+	    <item>15 seconds</item>
+	    <item>30 seconds</item>
+    	<item>1 minute</item>
+	    <item>2 minutes</item>
+    	<item>3 minutes</item>
+    	<item>5 minutes</item>
+    	<item>10 minutes</item>
+    	<item>15 minutes</item>
+    	<item>30 minutes</item>
+    	<item>45 minutes</item>
+    	<item>60 minutes</item>
+    	<item>90 minutes</item>
+    	<item>120 minutes</item>
+	</string-array>
+	<string-array name="time_control_values">
+	    <item>15000</item>
+	    <item>30000</item>
+    	<item>60000</item>
+	    <item>120000</item>
+    	<item>180000</item>
+    	<item>300000</item>
+    	<item>600000</item>
+    	<item>900000</item>
+    	<item>1800000</item>
+    	<item>2700000</item>
+    	<item>3600000</item>
+    	<item>5400000</item>
+    	<item>7200000</item>
+	</string-array>
+	<string-array name="time_increment_texts">
+	    <item>0s</item>
+	    <item>1s</item>
+	    <item>2s</item>
+	    <item>3s</item>
+	    <item>4s</item>
+	    <item>5s</item>
+	    <item>10s</item>
+    	<item>12s</item>
+    	<item>15s</item>
+    	<item>30s</item>
+	    <item>60s</item>
+	</string-array>
+	<string-array name="time_increment_values">
+	    <item>0</item>
+	    <item>1000</item>
+	    <item>2000</item>
+	    <item>3000</item>
+	    <item>4000</item>
+	    <item>5000</item>
+	    <item>10000</item>
+    	<item>12000</item>
+    	<item>15000</item>
+    	<item>30000</item>
+	    <item>60000</item>
+	</string-array>
+	<string-array name="font_size_texts">
+    	<item>Small</item>
+        <item>Default</item>
+	    <item>Medium</item>
+    	<item>Large</item>
+	</string-array>
+	<string-array name="font_size_values">
+	    <item>16</item>
+        <item>20</item>
+    	<item>24</item>
+	    <item>32</item>
+	</string-array>
+	<string-array name="game_mode_texts">
+	    <item>Play White</item>
+    	<item>Play Black</item>
+    	<!--<item>Bluetooth (play white)</item>
+    	<item>Bluetooth (play black)</item>-->
+	    <item>Two Players</item>
+    	<item>Analysis</item>
+	    <item>Computer vs Computer</item>
+	</string-array>
+	<string-array name="game_mode_values">
+	    <item>1</item>
+    	<item>2</item>
+	    <!--<item>3</item>
+    	<item>4</item>-->
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	</string-array>
+	<string-array name="thinking_arrows_texts">
+	    <item>No arrows</item>
+	    <item>1 arrow</item>
+	    <item>2 arrows</item>
+	    <item>3 arrows</item>
+	    <item>4 arrows</item>
+	    <item>5 arrows</item>
+	    <item>6 arrows</item>
+	</string-array>
+	<string-array name="thinking_arrows_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	</string-array>
+	<string-array name="scroll_sensitivity_texts">
+    	<item>Off</item>
+    	<item>Slowest</item>
+    	<item>Slow</item>
+    	<item>Normal</item>
+    	<item>Fast</item>
+	    <item>Fastest</item>
+	</string-array>
+	<string-array name="scroll_sensitivity_values">
+    	<item>0</item>
+    	<item>6</item>
+    	<item>3</item>
+    	<item>2</item>
+    	<item>1</item>
+	    <item>0.5</item>
+	</string-array>
+	<string name="about_info">\
+<b>About</b>\n\
+<i>ChessTastic</i> is a fully material designed Android Lollipop optimised game to fully enjoy the wonders of Chess. It is developed by Avijit Ghosh, and is based on, and a continuation of the incredible work done by several people, as stated below. \
+\n\
+\n\
+<i>Dark Knight</i> , by darktemplar824, is an open-source GPLv3 Honeycomb-optimized fork of the Droidfish chess engine, an Android interface \
+to the <i>stockfish</i> chess engine. \
+\n\
+\n\
+<i>Droidfish</i> is developed by Peter Österlund at http://web.comhem.se/petero2home/droidfish/ as a similar application \
+to Dark Knight for Android phones. It is also licensed under the GPLv3. \
+\n\
+\n\
+<i>Stockfish</i> is an open source chess engine, developed by Tord Romstad, Joona Kiiski and Marco Costalba and licensed under \
+the GNU General Public License version 3. The program originated from another open source program by Romstad named <i>Glaurung</i>. \
+\n\
+\n\
+\n\
+<b>Features</b>\n\
+* Opening book\n\
+* Unlimited undo/redo\n\
+* Copy/paste to/from clipboard\n\
+* Analysis mode\n\
+* Two player mode\n\
+<!--* Bluetooth play for two players\n\-->
+* Computer vs computer mode\n\
+* Edit board\n\
+* Support for PGN variations\n\
+* Multiplayer support coming soon!\n\
+\n\
+<!--<b>Bluetooth</b>\n\
+ChessTastic has rudimentary Bluetooth play support, allowing players to \
+have a game using two devices. Users must manually select in settings which side \
+to play, and then start a game by finding the device to play the game with. \
+Bluetooth play is still being developed and is in beta stage at this point. \
+\n\
+\n\-->
+<b>Hints</b>\n\
+* In game mode, long press chess board to activate copy/paste menu.\n\
+* In edit board mode, long press chess board to activate edit menu.\n\
+* Scroll left/right on the chess board to undo/redo moves.\n\
+* If the game contains multiple variations, scroll up/down on the chess board to \
+go to the previous/next variation.\n\
+\n\
+<b>Analysis</b>\n\
+ChessTastic can analyze games to find better alternatives to moves. By \
+using hints described above, players can optimize strategies and use the \
+computer to improve their play. Analysis can be activated in Settings. \
+\n\
+\n\
+<b>Opening book</b>\n\
+ChessTastic contains a small internal opening book. If you want to use \
+a larger book, you can configure Dark Knight to use a <i>polyglot</i> book file:\n\
+1. Create a directory called <i>ChessTastic</i> on the SD card folder.\n\
+2. Copy one or more polyglot book files to the <i>ChessTastic</i> directory.\n\
+3. From the program menu, activate the <i>Select opening book</i> function.\n\
+4. Select the opening book file you want to use.\n\
+\n\
+<b>PGN files</b>\n\
+ChessTastic can load games from PGN files. To use this feature:\n\
+1. Create a directory called <i>ChessTastic/pgn</i> on the SD card folder.\n\
+2. Copy one or more PGN files to the <i>ChessTastic/pgn</i> directory.\n\
+3. Long press the chess board and select <i>Load game from PGN file</i>.\n\
+4. Select the file, then the game within the file you want to load.\n\
+\n\
+<b>License</b>\n\
+GNU GPL v3\n\
+\n\
+<b>Developers</b>\n\
+* <i>Stockfish</i> is developed by Tord Romstad, Marco Costalba and Joona Kiiski.\n\
+* <i>Droidfish</i> is developed by Peter Österlund. (http://web.comhem.se/petero2home/droidfish/)\n\
+* <i>Dark Knight</i> is a Honeycomb fork of Droidfish. Its source is available at SourceForge.net.\n\
+* <i>ChessTastic</i> is a Lollipop fork of Droidfish and Dark Knight.\n\
+
+</string>
+
+<string name="cpu_warning">\
+<b>CPU Usage</b>\n\
+If you leave ChessTastic running in the background and the <i>GameMode</i> setting \
+is set to <i>Analysis</i> or <i>Computer vs Computer</i>, or if <i>Thinking Time</i> \
+is set to a large value, ChessTastic can use a lot of CPU power.\n\
+\n\
+If you are running on battery power, it is recommended that you disable analysis mode.
+	</string>
+	<string name="offer_draw">Offer Draw</string>
+	<string name="queen">Queen</string>
+	<string name="rook">Rook</string>
+	<string name="bishop">Bishop</string>
+	<string name="knight">Knight</string>
+	<string name="promote_pawn_to">Promote pawn to?</string>
+	<string name="copy_game">Copy Game to Clipboard</string>
+	<string name="copy_position">Copy Position to Clipboard</string>
+	<string name="paste">Paste from Clipboard</string>
+	<string name="load_game">Load game from PGN file</string>
+	<string name="remove_variation">Remove variation</string>
+	<string name="tools_menu">Tools</string>
+	<string name="goto_move">Goto move</string>
+	<string name="invalid_number_format">Invalid number format</string>
+	<string name="side_to_move">Side to Move</string>
+	<string name="clear_board">Clear Board</string>
+	<string name="initial_position">Initial Position</string>
+	<string name="castling_flags">Castling Flags</string>
+	<string name="en_passant_file">En Passant File</string>
+	<string name="move_counters">Move Counters</string>
+	<string name="paste_position">Paste Position</string>
+	<string name="edit_board">Edit Board</string>
+	<string name="select_side_to_move_first">Select side to move first</string>
+	<string name="white">White</string>
+	<string name="black">Black</string>
+	<string name="white_king_castle">White king castle</string>
+	<string name="white_queen_castle">White queen castle</string>
+	<string name="black_king_castle">Black king castle</string>
+	<string name="black_queen_castle">Black queen castle</string>
+	<string name="none">None</string>
+	<string name="select_en_passant_file">Select En Passant File</string>
+	<string name="edit_move_counters">Edit Move Counters</string>
+	<string name="internal_book">&lt;Internal Book&gt;</string>
+	<string name="select_opening_book_file">Select opening book file</string>
+	<string name="select_pgn_file">Select PGN file to open</string>
+	<string name="select_pgn_game">Select game to open</string>
+	<string name="reading_pgn_file">Reading PGN file</string>
+	<string name="please_wait">Please wait...</string>
+	<string name="no_pgn_files">No files found in directory ChessTastic/pgn on the SD card folder</string>
+	<string name="select_color_theme">Select Color Theme</string>
+	
+	<!--  Bluetooth -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth is not enabled, so Bluetooth gaming is unavailable</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    
+    
+    <string name="dtitle">Set Color</string>
+    <string name="dok">OK</string>
+    <string name="dcancel">Cancel</string>
+</resources>
