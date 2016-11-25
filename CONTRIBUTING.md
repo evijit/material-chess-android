@@ -6,4 +6,4 @@
 
 3. Add the github repo link for this project
 
-4. Make a branch and get started on the issues, or make oyur own if you find bugs. Do not send pull requests from master.
+4. Make a branch and get started on the issues, or make your own if you find bugs. Do not send pull requests from master.
