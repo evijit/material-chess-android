@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 
 import org.empyrn.darkknight.bluetooth.BluetoothGameController;
 import org.empyrn.darkknight.bluetooth.DeviceListActivity;
@@ -43,12 +42,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.ClipboardManager;
 import android.text.Html;
@@ -85,17 +81,14 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.github.amlcurran.showcaseview.ApiUtils;
 import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
 import com.github.amlcurran.showcaseview.ShowcaseView;
-import com.github.amlcurran.showcaseview.targets.ActionViewTarget;
 import com.github.amlcurran.showcaseview.targets.Target;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
-import com.github.fernandodev.easyratingdialog.library.EasyRatingDialog;
-import com.nemesis.materialchess.BuildConfig;
+
 import com.nemesis.materialchess.R;
 
-public class ChessTastic extends ActionBarActivity implements GUIInterface, OnShowcaseEventListener {
+public class ChessTastic extends AppCompatActivity implements GUIInterface, OnShowcaseEventListener {
 	// FIXME!!! Computer clock should stop if phone turned off (computer stops
 	// thinking if unplugged)
 	// FIXME!!! book.txt (and test classes) should not be included in apk
@@ -173,13 +166,12 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
 
     int choice,theme;
     public static Context contextOfApplication;
-    private EasyRatingDialog easyRatingDialog;
+
     private boolean shouldGoInvisible;
     private static final float ALPHA_DIM_VALUE = 1f;
 
     ShowcaseView sv;
     private ViewTarget target;
-    private final ApiUtils apiUtils = new ApiUtils();
     private LinearLayout homelayout;
     private SharedPreferences sharedPreferences;
     private Toolbar toolbar;
@@ -194,10 +186,6 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
         theme = sharedPreferences.getInt("Theme",R.style.AppThemeOrange);
         loadTheme();
         super.setTheme(theme);
-
-
-
-        easyRatingDialog = new EasyRatingDialog(this);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -257,14 +245,14 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void dimView(LinearLayout view) {
-        if (apiUtils.isCompatWithHoneycomb()) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             view.setAlpha(ALPHA_DIM_VALUE);
         }
     }
 
     @Override
     public void onShowcaseViewHide(ShowcaseView showcaseView) {
-        if (apiUtils.isCompatWithHoneycomb()) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             homelayout.setAlpha(1f);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -296,9 +284,13 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
     }
 
     @Override
+    public void onShowcaseViewTouchBlocked(MotionEvent motionEvent) {
+
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
-        easyRatingDialog.onStart();
     }
 
     public static Context getContextOfApplication(){
@@ -375,6 +367,11 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
                     }
 
                     @Override
+                    public void onShowcaseViewTouchBlocked(MotionEvent motionEvent) {
+
+                    }
+
+                    @Override
                     public void onShowcaseViewHide(final ShowcaseView scv) {
                         scv.setVisibility(View.GONE);
                         showOverlayTutorialTwo();
@@ -399,6 +396,11 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
 
                     @Override
                     public void onShowcaseViewShow(final ShowcaseView scv) {
+                    }
+
+                    @Override
+                    public void onShowcaseViewTouchBlocked(MotionEvent motionEvent) {
+
                     }
 
                     @Override
@@ -436,6 +438,11 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
                     public void onShowcaseViewShow(final ShowcaseView scv) { }
 
                     @Override
+                    public void onShowcaseViewTouchBlocked(MotionEvent motionEvent) {
+
+                    }
+
+                    @Override
                     public void onShowcaseViewHide(final ShowcaseView scv) {
                         drawerLayoutt.openDrawer(Gravity.LEFT);
                         showOverlayTutorialFour();
@@ -471,9 +478,15 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
                         }
 
                     @Override
+                    public void onShowcaseViewTouchBlocked(MotionEvent motionEvent) {
+
+                    }
+
+                    @Override
                     public void onShowcaseViewHide(final ShowcaseView scv) {
                         drawerLayoutt.closeDrawers();
-                        if (apiUtils.isCompatWithHoneycomb()) {
+                        int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+                        if (currentapiVersion >= Build.VERSION_CODES.HONEYCOMB) {
                             homelayout.setAlpha(1f);
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -770,7 +783,6 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
 		}
 		updateNotification();
 		super.onResume();
-        easyRatingDialog.showIfNeeded();
         loadTheme();
 	}
 
@@ -1677,8 +1689,8 @@ public class ChessTastic extends ActionBarActivity implements GUIInterface, OnSh
 
 			PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
 					notificationIntent, 0);
-			notification.setLatestEventInfo(context, contentTitle, contentText,
-					contentIntent);
+//			notification.setLatestEventInfo(context, contentTitle, contentText,
+//					contentIntent);
 
 			mNotificationManager.notify(cpuUsage, notification);
 		} else {

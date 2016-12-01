@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- res/values/styles.xml -->
-<resources>
-  <!-- your theme inherits from the material theme -->
-  <style name="AppTheme" parent="Theme.AppCompat">
-    <item name="windowActionBar">false</item>
-    <!--  <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
-  </style>
 
-  <!-- <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/bt_action</item>
-   </style>-->
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
     <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
         <item name="sv_backgroundColor">#3300A621</item>
         <item name="sv_showcaseColor">#00801A</item>
