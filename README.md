@@ -14,6 +14,8 @@ An extension of the Dark Knight and Stockfish open source projects, I developed 
 2. Develop multiplayer using Play Games
 3. Fix the bluetooth gaming functionality
 
+Check [Contributing Guidelines](CONTRIBUTING.md) on how to get started if you wish to contribute.
+
 Kindly send me pull requests and/or shoot a message at avijitg22@gmail.com if you are in or have improvements! Thank you. 
 
 #Screenshots:
@@ -42,3 +44,7 @@ GNU GPL V3
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
+
+Additional term:
+
+```You *MAY NOT* sell this app or any modification of it for commercial purposes. This is intended to be free and open source software.```
