@@ -10,7 +10,7 @@ An extension of the Dark Knight and Stockfish open source projects, I developed 
 
 #Goals:
 
-1. Move to Stockfish 6
+1. Move to Stockfish 8
 2. Develop multiplayer using Play Games
 3. Fix the bluetooth gaming functionality
 
