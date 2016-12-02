@@ -1,0 +1,13 @@
+sudo: required
+language: android
+jdk: oraclejdk8
+android:
+  components:
+  - tools
+  - platform-tools
+  - build-tools-23.0.2
+  - android-23
+  - extra-android-m2repository
+script:
+  - chmod +x ./gradlew
+  - ./gradlew assembleDebug
