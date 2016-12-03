@@ -20,7 +20,7 @@ Kindly send me pull requests and/or shoot a message at avijitg22@gmail.com if yo
 
 #KWoC 2016
 
-*Chesstastic* is participating in Kharagpur Winter of Code 2016. Please join this [Facebook Group](https://www.facebook.com/groups/1125067874207040/?fref=nf) to ask questions and discuss.
+*Chesstastic* is participating in Kharagpur Winter of Code 2016. Please join this [Facebook Group](https://www.facebook.com/groups/1814965085382388/) to ask questions and discuss.
 
 #Screenshots:
 
