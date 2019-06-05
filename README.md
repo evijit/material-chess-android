@@ -3,6 +3,7 @@
 # Material Chess - ChessTastic 
 
 [![Join the chat at https://gitter.im/AvijitGhosh82/material-chess-android](https://badges.gitter.im/AvijitGhosh82/material-chess-android.svg)](https://gitter.im/AvijitGhosh82/material-chess-android?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Open Source Helpers](https://www.codetriage.com/avijitghosh82/material-chess-android/badges/users.svg)](https://www.codetriage.com/avijitghosh82/material-chess-android)
 
 [Play Store Link](https://play.google.com/store/apps/details?id=com.nemesis.materialchess&hl=en)
 
